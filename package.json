@@ -1,0 +1,30 @@
+{
+  "name": "lakialex",
+  "version": "1.0.0",
+  "description": "**Contributors:** Lazar Momcilovic **Requires at least:** WordPress 5.0.0 **Tested up to:** WordPress 5.x **License:** GPLv2 or later **License URI:** http://www.gnu.org/licenses/gpl-2.0.html **Tags:** one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.4.7",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wp-pot": "^2.3.3",
+    "gulp-zip": "^4.2.0",
+    "postcss-cli": "^6.1.1"
+  },
+  "dependencies": {}
+}

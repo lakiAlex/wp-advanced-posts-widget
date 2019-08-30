@@ -1,0 +1,10 @@
+/**
+ * All of the CSS for admin-specific functionality
+ */
+[class^="widget-wpapw"] button,
+[class^="widget-wpapw"] select,
+[class^="widget-wpapw"] input {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=admin.css.map */

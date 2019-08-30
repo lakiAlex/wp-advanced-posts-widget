@@ -10,7 +10,7 @@
  * @since      1.0.0
  *
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  */
 
 /**
@@ -21,7 +21,7 @@
  *
  * @since      1.0.0
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  * @author     Lazar Momcilovic <lakialekscs@gmail.com>
  */
 class Wpapw_i18n {
@@ -37,7 +37,7 @@ class Wpapw_i18n {
 		load_plugin_textdomain(
 			'wpapw',
 			false,
-			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
+			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/lang/'
 		);
 
 	}

@@ -1,10 +1,9 @@
 <?php
 
 /**
- * The plugin bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
+ * Generating the plugin information in the plugin admin area.
+ * This file also includes all of the dependencies used by the plugin,
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
@@ -22,7 +21,7 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       wpapw
- * Domain Path:       /languages
+ * Domain Path:       /lang
  */
 
 // If this file is called directly, abort.
@@ -42,7 +41,7 @@ define( 'WPAPW_VERSION', '1.0.0' );
  * This action is documented in includes/class-wpapw-activator.php
  */
 function activate_wpapw() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpapw-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/class-wpapw-activator.php';
 	Wpapw_Activator::activate();
 }
 
@@ -51,7 +50,7 @@ function activate_wpapw() {
  * This action is documented in includes/class-wpapw-deactivator.php
  */
 function deactivate_wpapw() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpapw-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'inc/class-wpapw-deactivator.php';
 	Wpapw_Deactivator::deactivate();
 }
 
@@ -62,7 +61,7 @@ register_deactivation_hook( __FILE__, 'deactivate_wpapw' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wpapw.php';
+require plugin_dir_path( __FILE__ ) . 'inc/class-wpapw.php';
 
 /**
  * Begins execution of the plugin.

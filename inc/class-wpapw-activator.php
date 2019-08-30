@@ -7,7 +7,7 @@
  * @since      1.0.0
  *
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  */
 
 /**
@@ -17,7 +17,7 @@
  *
  * @since      1.0.0
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  * @author     Lazar Momcilovic <lakialekscs@gmail.com>
  */
 class Wpapw_Activator {

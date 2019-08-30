@@ -10,7 +10,7 @@
  * @since      1.0.0
  *
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  */
 
 /**
@@ -24,7 +24,7 @@
  *
  * @since      1.0.0
  * @package    Wpapw
- * @subpackage Wpapw/includes
+ * @subpackage Wpapw/inc
  * @author     Lazar Momcilovic <lakialekscs@gmail.com>
  */
 class Wpapw {
@@ -103,30 +103,30 @@ class Wpapw {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wpapw-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wpapw-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-wpapw-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wpapw-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-public.php';
 		
 		/**
-		 * The class responsible for defining all actions that occur in the public-facing
-		 * side of the site.
+		 * The class responsible for extending WP_Widget class and
+		 * function to register widget.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wpapw-widget.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-widget.php';
 
 		$this->loader = new Wpapw_Loader();
 
