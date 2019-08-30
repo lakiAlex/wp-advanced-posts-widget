@@ -28,6 +28,7 @@ To install this plugin:
 * That's it!
 
 Alternatively you can search for the plugin from your WordPress dashboard and install from there.
+You can also download it from [WordPress reposetory](https://wordpress.org/plugins/wp-advanced-posts-widget/).
 
 Visit [WordPress.org for a comprehensive guide](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation) on in how to install WordPress plugins.
 
