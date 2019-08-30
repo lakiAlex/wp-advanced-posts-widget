@@ -1,7 +1,7 @@
 # WP Advanced Posts Widget
 
 * Status: ✅ Active
-* Contributors: [@lakialex](http://twitter.com/lakialex)
+* Contributors: [@lakialex](http://twitter.com/lakiAleksCS)
 * Description: WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest or trending posts.
 * Author: [Lazar Momcilovic](https://github.com/lakiAlex/)
 * Author URI: [https://github.com/lakiAlex/](https://github.com/lakiAlex/)
