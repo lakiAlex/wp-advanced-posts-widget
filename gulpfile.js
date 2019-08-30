@@ -73,7 +73,7 @@ function lang() {
 				package: domain
 			})
 		)
-		.pipe(dest("lang/" + domain + ".pot"));
+		.pipe(dest("./lang/" + domain + ".pot"));
 }
 
 // Build theme zip file
