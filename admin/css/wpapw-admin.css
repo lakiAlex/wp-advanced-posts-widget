@@ -3,3 +3,8 @@
  * included in this file.
  */
  
+[class^="widget-wpapw"] button,
+[class^="widget-wpapw"] select,
+[class^="widget-wpapw"] input {
+    font-weight: 400;
+}

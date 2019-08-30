@@ -2,3 +2,195 @@
  * All of the CSS for public-facing functionality
  */
  
+.wpapw__posts {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Probably for removal. Should not apply any styles for widget title. It should be consistant with other widgets.
+/* .wpapw__widget .widget-title,
+.wpapw__widget .widget_title,
+.wpapw__widget .widget__title {
+	font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0;
+    margin-top: 16px;
+    margin-bottom: 26px;
+    text-align: center;
+} */
+
+.wpapw__posts img {
+  vertical-align: top;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  outline: 1px solid transparent;
+}
+
+.wpapw__posts iframe {
+  max-height: 100px;
+}
+
+.wpapw__post {
+  position: relative;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.wpapw__img {
+  display: inline-block;
+  width: 36%;
+  max-width: 95px;
+}
+
+.wpapw__img a {
+  display: block;
+  overflow: hidden;
+}
+
+.wpapw__img img,
+.widget .wpapw__img img,
+.widget-area .widget .wpapw__img img {
+  margin: 0;
+}
+
+.wpapw__desc {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+.wpapw__desc h4 {
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.wpapw__desc h4 a {
+  color: #000;
+}
+
+.wpapw__desc p {
+  font-size: 13px;
+  color: #848484;
+  line-height: 13px;
+  margin-top: 7px;
+}
+
+.wpapw__cat {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.wpapw__cat a {
+	position: relative;
+	display: inline-block;
+	font-size: 9.1px;
+	font-weight: 400;
+	line-height: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+	margin-right: 4px;
+	color: #000;
+	text-decoration: none; 
+	background: transparent;
+  
+}
+
+.wpapw__count {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  top: -9px;
+  left: -9px;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #000000;
+  z-index: 99;
+  font-size: 10px;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+  border-radius: 100px;
+}
+
+.widget p.wpapw__count {
+	font-size: 10px;
+}
+
+.wpapw__post:last-child {
+  margin-bottom: 0;
+}
+
+.wpapw__posts.--large .wpapw__post {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.wpapw__posts.--large .wpapw__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.wpapw__posts.--large .wpapw__img img {
+  width: 100%;
+}
+
+.wpapw__posts.--large .wpapw__count {
+  display: none;
+}
+
+.wpapw__posts.--large .wpapw__desc {
+  position: relative;
+  width: 100%;
+  padding: 17px 0 0;
+}
+
+.wpapw__posts.--large .wpapw__desc h4 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.wpapw__posts.--large .wpapw__desc.--count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wpapw__posts.--large .wpapw__desc.--count .wpapw__count {
+  display: block;
+  position: absolute;
+  /* font-family: "sekundar", "Baskerville Old Face", "Garamond", "Times New Roman", serif; */
+  margin: 0;
+  left: 0;
+  top: 30px;
+  font-size: 46px;
+  font-weight: 700;
+  color: #e0e0e4;
+  background-color: transparent;
+}
+
+.wpapw__posts.--large .wpapw__desc.--count h4,
+.wpapw__posts.--large .wpapw__desc.--count span {
+  padding-left: 40px;
+}
+
+.wpapw__posts.--large iframe {
+  max-height: 250px;
+}
+
+.wpapw__posts.--large .wpapw__cat {
+  margin-top: 0;
+}
