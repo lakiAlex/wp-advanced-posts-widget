@@ -1,6 +1,6 @@
 # WP Advanced Posts Widget
 
-* Status: ✅ Active
+* Status: :bowtie: Active
 * Contributors: [@lakialex](http://twitter.com/lakiAleksCS)
 * Description: WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest or trending posts.
 * Author: [Lazar Momcilovic](https://github.com/lakiAlex/)

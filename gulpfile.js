@@ -87,6 +87,7 @@ function zip() {
 		"!./package.json",
 		"!./package-lock.json",
 		"!./{.git,.git/**/*}",
+		"!./readme.md",
 		"!.DS_Store"
 	])
 		.pipe(gulpZip(domain + ".zip"))
