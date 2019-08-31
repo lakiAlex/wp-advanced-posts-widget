@@ -160,7 +160,7 @@ Class wpapw_widget extends WP_Widget {
 		</p>
 		
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'sort' ) ); ?>"><strong><?php esc_html_e( 'Sort by', 'wpapw' ); ?>:</label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'sort' ) ); ?>"><strong><?php esc_html_e( 'Sort by', 'wpapw' ); ?>:</strong> </label>
 			<select id="<?php echo esc_attr( $this->get_field_id( 'sort' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'sort' ) ); ?>" class="widefat">
 				<option value="latest" <?php selected( 'latest', $sort ); ?>><?php esc_html_e( 'Latest', 'wpapw' ); ?></option>
 				<option value="trending" <?php selected( 'trending', $sort ); ?>><?php esc_html_e( 'Trending', 'wpapw' ); ?></option>
@@ -175,7 +175,7 @@ Class wpapw_widget extends WP_Widget {
 		</p>
 		
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>"><?php esc_html_e( 'Layout', 'wpapw' ); ?>:</strong></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>"><strong> <?php esc_html_e( 'Layout', 'wpapw' ); ?>:</strong></label>
 			<select id="<?php echo esc_attr( $this->get_field_id( 'layout' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'layout' ) ); ?>" class="widefat">
 				<option value="small" <?php selected( 'small', $layout ); ?>><?php esc_html_e( 'List', 'wpapw' ); ?></option>
 				<option value="large" <?php selected( 'large', $layout ); ?>><?php esc_html_e( 'Large', 'wpapw' ); ?></option>

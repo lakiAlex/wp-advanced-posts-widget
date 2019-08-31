@@ -1,6 +1,6 @@
 === WP Advanced Posts Widget ===
 
-Contributors: [@lakialex](http://twitter.com/lakiAleksCS)
+Contributors: lakialex
 Tags: posts, widget, thumbnails, sidebar, widgets, lightweight
 Requires at least: 5.0
 Tested up to: 5.2.2
@@ -10,14 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest or trending posts. It's lightweight, simple to use and powerful in features.
-
-The widget is built with the following philosophy:
-
-* Use sensible and simple markup
-* Provide minimal styles/css
-* Cache where possible
-* Requires no setup
+WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest, trending and popular posts. It's lightweight, simple to use and powerful in features.
 
 == Installation ==
 
@@ -37,5 +30,5 @@ Visit [WordPress.org for a comprehensive guide](http://codex.wordpress.org/Manag
 
 ## Changelog
 
-#### 1.0
+#### 1.0.0
 * Initial release
