@@ -120,13 +120,31 @@
 }
 
 .wpapw__posts.--large .wpapw__img {
+  position: relative;
   display: block;
   width: 100%;
   max-width: 100%;
 }
 
+.wpapw__posts.--large .wpapw__img:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.wpapw__posts.--large .wpapw__img a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .wpapw__posts.--large .wpapw__img img {
   width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .wpapw__posts.--large .wpapw__count {
@@ -158,8 +176,8 @@
   background-color: transparent;
 }
 
-.wpapw__posts.--large .wpapw__desc.--count .wpapw__count h4,
-.wpapw__posts.--large .wpapw__desc.--count .wpapw__count span {
+.wpapw__posts.--large .wpapw__desc.--count h4,
+.wpapw__posts.--large .wpapw__desc.--count span {
   padding-left: 40px;
 }
 

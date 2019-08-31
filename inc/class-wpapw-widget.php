@@ -79,9 +79,7 @@ Class wpapw_widget extends WP_Widget {
 							
 									<?php if (has_post_thumbnail()) { ?>
 										<div class="wpapw__img">
-											<a href="<?php echo esc_url(get_permalink()); ?>">
-												<?php the_post_thumbnail('medium'); ?>
-											</a>
+											<a href="<?php echo esc_url(get_permalink()); ?>" data-bg-wpapw="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' ); ?>"></a>
 										</div>
 									<?php } ?>
 

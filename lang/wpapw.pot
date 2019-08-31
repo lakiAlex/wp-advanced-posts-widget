@@ -21,98 +21,98 @@ msgstr ""
 msgid "Displays your latest or trending posts."
 msgstr ""
 
-#: inc/class-wpapw-widget.php:127, _build/wpapw/inc/class-wpapw-widget.php:127
+#: inc/class-wpapw-widget.php:125, _build/wpapw/inc/class-wpapw-widget.php:127
 msgid "You have no posts to show for selected options. Try changing them in"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:129, _build/wpapw/inc/class-wpapw-widget.php:129
+#: inc/class-wpapw-widget.php:127, _build/wpapw/inc/class-wpapw-widget.php:129
 msgid "widgets panel."
 msgstr ""
 
-#: inc/class-wpapw-widget.php:139, _build/wpapw/inc/class-wpapw-widget.php:139
+#: inc/class-wpapw-widget.php:137, _build/wpapw/inc/class-wpapw-widget.php:139
 msgid "Latest Stories"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:157, _build/wpapw/inc/class-wpapw-widget.php:157
+#: inc/class-wpapw-widget.php:155, _build/wpapw/inc/class-wpapw-widget.php:157
 msgid "Title"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:163, _build/wpapw/inc/class-wpapw-widget.php:163
+#: inc/class-wpapw-widget.php:161, _build/wpapw/inc/class-wpapw-widget.php:163
 msgid "Sort by"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:165, _build/wpapw/inc/class-wpapw-widget.php:165
+#: inc/class-wpapw-widget.php:163, _build/wpapw/inc/class-wpapw-widget.php:165
 msgid "Latest"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:166, _build/wpapw/inc/class-wpapw-widget.php:166
+#: inc/class-wpapw-widget.php:164, _build/wpapw/inc/class-wpapw-widget.php:166
 msgid "Trending"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:167, _build/wpapw/inc/class-wpapw-widget.php:167
+#: inc/class-wpapw-widget.php:165, _build/wpapw/inc/class-wpapw-widget.php:167
 msgid "Popular"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:172, _build/wpapw/inc/class-wpapw-widget.php:172
+#: inc/class-wpapw-widget.php:170, _build/wpapw/inc/class-wpapw-widget.php:172
 msgid "Number of Posts"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:178, _build/wpapw/inc/class-wpapw-widget.php:178
+#: inc/class-wpapw-widget.php:176, _build/wpapw/inc/class-wpapw-widget.php:178
 msgid "Layout"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:180, _build/wpapw/inc/class-wpapw-widget.php:180
+#: inc/class-wpapw-widget.php:178, _build/wpapw/inc/class-wpapw-widget.php:180
 msgid "List"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:181, _build/wpapw/inc/class-wpapw-widget.php:181
+#: inc/class-wpapw-widget.php:179, _build/wpapw/inc/class-wpapw-widget.php:181
 msgid "Large"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:185, _build/wpapw/inc/class-wpapw-widget.php:185
+#: inc/class-wpapw-widget.php:183, _build/wpapw/inc/class-wpapw-widget.php:185
 msgid "Category"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:187, _build/wpapw/inc/class-wpapw-widget.php:187
+#: inc/class-wpapw-widget.php:185, _build/wpapw/inc/class-wpapw-widget.php:187
 msgid "All"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:194, _build/wpapw/inc/class-wpapw-widget.php:194
+#: inc/class-wpapw-widget.php:192, _build/wpapw/inc/class-wpapw-widget.php:194
 msgid "Show Counter"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:202, _build/wpapw/inc/class-wpapw-widget.php:202
+#: inc/class-wpapw-widget.php:200, _build/wpapw/inc/class-wpapw-widget.php:202
 msgid "Time Range"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:204, _build/wpapw/inc/class-wpapw-widget.php:204
+#: inc/class-wpapw-widget.php:202, _build/wpapw/inc/class-wpapw-widget.php:204
 msgid "Any Time"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:205, _build/wpapw/inc/class-wpapw-widget.php:205
+#: inc/class-wpapw-widget.php:203, _build/wpapw/inc/class-wpapw-widget.php:205
 msgid "Last 24 Hours"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:206, _build/wpapw/inc/class-wpapw-widget.php:206
+#: inc/class-wpapw-widget.php:204, _build/wpapw/inc/class-wpapw-widget.php:206
 msgid "Last 7 Days"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:207, _build/wpapw/inc/class-wpapw-widget.php:207
+#: inc/class-wpapw-widget.php:205, _build/wpapw/inc/class-wpapw-widget.php:207
 msgid "Last 30 Days"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:208, _build/wpapw/inc/class-wpapw-widget.php:208
+#: inc/class-wpapw-widget.php:206, _build/wpapw/inc/class-wpapw-widget.php:208
 msgid "Last 2 Months"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:209, _build/wpapw/inc/class-wpapw-widget.php:209
+#: inc/class-wpapw-widget.php:207, _build/wpapw/inc/class-wpapw-widget.php:209
 msgid "Last 3 Months"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:210, _build/wpapw/inc/class-wpapw-widget.php:210
+#: inc/class-wpapw-widget.php:208, _build/wpapw/inc/class-wpapw-widget.php:210
 msgid "Last 6 Months"
 msgstr ""
 
-#: inc/class-wpapw-widget.php:211, _build/wpapw/inc/class-wpapw-widget.php:211
+#: inc/class-wpapw-widget.php:209, _build/wpapw/inc/class-wpapw-widget.php:211
 msgid "Last Year"
 msgstr ""
