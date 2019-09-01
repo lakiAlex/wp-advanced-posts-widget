@@ -1,3 +1,5 @@
+![WP Advanced Posts Widget](https://ps.w.org/wp-advanced-posts-widget/assets/banner-1544xp500.png)
+
 # WP Advanced Posts Widget
 
 * Status: :coffee: Active
