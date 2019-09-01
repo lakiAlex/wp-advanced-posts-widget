@@ -1,4 +1,4 @@
-![WP Advanced Posts Widget](https://ps.w.org/wp-advanced-posts-widget/assets/banner-1544xp500.png)
+![WP Advanced Posts Widget](https://github.com/lakiAlex/wp-advanced-posts-widget/blob/master/src/img/banner-1544x500.png)
 
 # WP Advanced Posts Widget
 
