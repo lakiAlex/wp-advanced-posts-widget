@@ -25,7 +25,7 @@ The widget is built with the following philosophy:
 
 To install this plugin:
 
-* Upload the `wpapw` folder to the `/wp-content/plugins/` directory
+* Upload the `wp-advanced-posts-widget` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 * That's it!
 
