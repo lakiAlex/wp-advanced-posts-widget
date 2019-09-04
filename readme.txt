@@ -16,7 +16,7 @@ WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest, 
 
 To install this plugin:
 
-* Upload the `wpapw` folder to the `/wp-content/plugins/` directory
+* Upload the `wp-advanced-posts-widget` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 * That's it!
 
