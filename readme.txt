@@ -24,11 +24,10 @@ Alternatively you can search for the plugin from your WordPress dashboard and in
 
 Visit [WordPress.org for a comprehensive guide](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation) on in how to install WordPress plugins.
 
-## Frequently Asked Questions
+== Frequently Asked Questions ==
 
-...
+= How can I send feedback or get help with a bug? =
+I’d love to hear your bug reports, feature suggestions and any other feedback! Please head over to the [GitHub](https://github.com/lakiAlex/wp-advanced-posts-widget) issues page to search for existing issues or open a new one. While I’ll try to triage issues reported here on the plugin forum, you’ll get a faster response (and reduce duplication of effort) by keeping everything centralized in the [GitHub repository](https://github.com/lakiAlex/wp-advanced-posts-widget).
 
-## Changelog
-
-#### 1.0.0
-* Initial release
+= Want to contribute? =
+You can find the plugin on [GitHub](https://github.com/lakiAlex/wp-advanced-posts-widget), and I’d love your help building it. You’re also welcome to give any feedback.
