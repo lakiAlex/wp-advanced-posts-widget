@@ -123,8 +123,7 @@ class Wpapw {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-public.php';
 		
 		/**
-		 * The class responsible for extending WP_Widget class and
-		 * function to register widget.
+		 * The class responsible for extending WP_Widget core class.=
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'inc/class-wpapw-widget.php';
 
@@ -177,6 +176,9 @@ class Wpapw {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		
+		$this->loader->add_action( 'widgets_init', $plugin_public, 'wpapw_widget' );
+		$this->loader->add_action( 'wp_head', $plugin_public, 'wpapw_views' );
 
 	}
 

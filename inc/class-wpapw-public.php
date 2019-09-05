@@ -53,6 +53,17 @@ class Wpapw_Public {
 		$this->version = $version;
 
 	}
+	
+	/**
+	 *
+	 * An instance of this following classes should be passed to the run() function
+	 * defined in Wpapw_Loader as all of the hooks are defined
+	 * in that particular class.
+	 *
+	 * The Wpapw_Loader will then create the relationship
+	 * between the defined hooks and the functions defined in this
+	 * classes.
+	 */
 
 	/**
 	 * Register the stylesheets for the public-facing side of the site.
@@ -60,18 +71,6 @@ class Wpapw_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Wpapw_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Wpapw_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . '../dist/css/style.css', array(), $this->version, 'all' );
 
@@ -84,20 +83,44 @@ class Wpapw_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Wpapw_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Wpapw_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . '../dist/js/main.min.js', array( 'jquery' ), $this->version, false );
 
+	}
+	
+	/**
+	 * Register the main widget
+	 *
+	 * @since  1.0.0
+	 */
+	public function wpapw_widget() {
+		register_widget( 'wpapw_widget' );
+	}
+	
+	/**
+	 * Track and set the views of each post.
+	 *
+	 * @since    1.0.4
+	 */
+	public function wpapw_views() {
+	
+	    if ( ! is_single() ) return;
+	    
+	    if ( empty( $postID ) ) {
+	        global $post;
+	        $postID = $post->ID;    
+	    }
+	    
+	    $count_key = 'post_views_count';
+	    $count = get_post_meta( $postID, $count_key, true );
+	    if ( $count == '' ) {
+	        $count = 0;
+	        delete_post_meta( $postID, $count_key );
+	        add_post_meta( $postID, $count_key, '0' );
+	    } else {
+	        $count++;
+	        update_post_meta( $postID, $count_key, $count );
+	    }
+	    
 	}
 
 }

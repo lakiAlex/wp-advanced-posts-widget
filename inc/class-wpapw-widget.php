@@ -7,11 +7,6 @@
  * @package    Wpapw
  */
 
-function wpapw_widget() {
-	register_widget( 'wpapw_widget' );
-}
-add_action( 'widgets_init', 'wpapw_widget' );
-
 Class wpapw_widget extends WP_Widget {
 
 	public function __construct() {
@@ -53,7 +48,7 @@ Class wpapw_widget extends WP_Widget {
 					  'after'  => $time,
 					)
 				),
-			);
+			);			
 		} else {
 			$query = array(
 				'category__in' 				=> $cat,
@@ -74,7 +69,8 @@ Class wpapw_widget extends WP_Widget {
 				<div class="wpapw__posts <?php if ($layout == 'large') : ?>--large<?php endif; ?>">
 
 					<?php while( $posts->have_posts() ) : $posts->the_post(); ?>
-						<div class="wpapw__post">
+				
+						<div class="wpapw__post" data-views="<?php echo esc_attr( get_post_meta( get_the_ID(), 'post_views_count', true ) ); ?>">
 							<?php if ($layout == 'large') { ?>
 							
 									<?php if (has_post_thumbnail()) { ?>
@@ -224,72 +220,4 @@ Class wpapw_widget extends WP_Widget {
 		return $instance;
 	}
 
-}
-
-/**
-* Meta Views Counter
-*/
-
-function wpapw_set_views( $postID ) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta( $postID, $count_key, true );
-    if ( $count == '' ) {
-        $count = 0;
-        delete_post_meta( $postID, $count_key );
-        add_post_meta( $postID, $count_key, '0' );
-    } else {
-        $count++;
-        update_post_meta( $postID, $count_key, $count );
-    }
-}
-
-// To keep the count accurate, lets get rid of prefetching
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-
-function wpapw_track_views( $post_id ) {
-    if ( ! is_single() ) return;
-    if ( empty( $post_id ) ) {
-        global $post;
-        $post_id = $post->ID;    
-    }
-    wpapw_set_views( $post_id );
-}
-add_action( 'wp_head', 'wpapw_track_views' );
-
-// Function to show the views count on the front-end for future update
-// function wpapw_show_views() {
-// 	$postID = get_the_ID();
-// 	$count_key = 'post_views_count';
-// 	$count = get_post_meta( $postID, $count_key, true );
-// 	$number = $count;
-// 	if ( function_exists( 'wpapw_format_number' ) ) $number = wpapw_format_number( $count );
-// 	printf(
-// 		'<span class="wpapw__views"><a href="%1$s">%2$s</a></span>',
-// 		esc_url( get_permalink() ),
-// 		$number
-// 	);
-// }
-
-/**
-* Count Format
-*/
-function wpapw_format_number($number) {
-	$precision = 1;
-	if ( $number >= 1000 && $number < 1100 || $number >= 2000 && $number < 2100 ) {
-		$formatted = number_format( $number/1000, 0 ).'K';
-	} elseif ( $number >= 3000 && $number < 3100 || $number >= 4000 && $number < 4100 ) {
-		$formatted = number_format( $number/1000, 0 ).'K';
-	} elseif ( $number >= 5000 && $number < 5100 || $number >= 4000 && $number < 6100 ) {
-		$formatted = number_format( $number/1000, 0 ).'K';
-	} elseif ( $number >= 1100 && $number < 1000000 ) {
-		$formatted = number_format( $number/1000, $precision ).'K';
-	} else if ( $number >= 1000000 && $number < 1000000000 ) {
-		$formatted = number_format( $number/1000000, $precision ).'M';
-	} else if ( $number >= 1000000000 ) {
-		$formatted = number_format( $number/1000000000, $precision ).'B';
-	} else {
-		$formatted = $number; // Number is less than 1000
-	}
-	$formatted = str_replace( '.00', '', $formatted );
-	return $formatted;
 }
