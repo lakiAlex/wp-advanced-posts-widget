@@ -17,8 +17,7 @@ WP Advanced Posts Widget is a no fuss WordPress widget to showcase your latest o
 The widget is built with the following philosophy:
 
 * Use sensible and simple markup
-* Provide minimal styles/css
-* Cache where possible
+* Provide minimal styles
 * Requires no setup
 
 ## Installation
